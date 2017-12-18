@@ -19,10 +19,9 @@ a {
 	cursor: pointer;
   &:hover, &:active {
     color: $blue;
+    text-decoration: none;
   }
 }
-
-
 img {
   max-width: 100%;
 }
@@ -111,7 +110,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $mySerif;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -130,7 +129,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $mySans;
   font-size: 18px;
 
   @include mobile {
@@ -204,3 +203,46 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  a {
+    color: rgba(0,0,0,.84);
+    text-decoration: none;
+    cursor: pointer;
+    &:hover, &:active {
+      color: rgba(0,0,0,.84);
+      text-decoration: none;
+    }
+  }
+}
+
+html, body {
+  color: rgba(0,0,0,.84);
+}
+
+p {
+  color: rgba(0,0,0,.84);  
+}
+
+article {
+  p {
+    font-size: 21px;
+    line-height: 33px;
+    a {
+      color: $blue;
+      text-decoration: none;
+      background-image: linear-gradient(to bottom,$blue 50%,rgba(0,0,0,0) 50%);
+      background-repeat: repeat-x;
+      background-size: 2px 1px;
+      background-position: 0 23px;
+      cursor: pointer;
+      &:hover, &:active {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+  }
+}
