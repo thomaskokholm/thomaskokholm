@@ -91,3 +91,10 @@ exclude:
 # Include these files
 include:
   - _pages
+  - _cases
+
+# Collections
+
+collections:
+  cases:
+    output: true
