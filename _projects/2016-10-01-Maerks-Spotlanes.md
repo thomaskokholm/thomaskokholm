@@ -1,7 +1,7 @@
 ---
-layout: projects
+layout: project
 title: Maersk Spotlanes
-published: tue
+published: true
 ---
 
 Maersk Spotlanes is...
