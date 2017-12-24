@@ -92,6 +92,7 @@ exclude:
 include:
   - _pages
   - _cases
+  - _projects
 
 # Collections
 
