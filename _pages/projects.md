@@ -6,7 +6,7 @@ published: true
 ---
 
 <div class="row">
-    {% for item in site.cases %}
+    {% for item in site.projects %}
     <div class="col-md-6">
         <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
         <a href="{{ item.url }}">
