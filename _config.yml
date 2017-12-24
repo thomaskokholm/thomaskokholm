@@ -94,7 +94,6 @@ include:
   - _projects
 
 # Collections
-
 collections:
   projects:
     output: true
