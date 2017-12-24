@@ -96,5 +96,5 @@ include:
 # Collections
 
 collections:
-  cases:
+  projects:
     output: true
