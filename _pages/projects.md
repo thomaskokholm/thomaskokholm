@@ -5,22 +5,33 @@ permalink: /projects/
 published: true
 ---
 
-
 <div class="row">
-    {% for project in site.data.projects %}
+    {% for item in site.cases %}
     <div class="col-md-6">
-        <h2>{{ project.title }}</h2>
-        <img src="{{ project.thumbnail }}" />
+        <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+        <a href="{{ item.url }}">
+            <img src="{{ item.thumbnail }}" />
+        </a>
         <p>
-            <small>Date: {{ project.date }}</small>
+        <small>
+        {% for tag in item.tags %}
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+                <a href="/tag/{{ tag_name }}" class="badge badge-light">
+                {{ tag_name }}
+                </a>
+        {% endfor %}
+        </small>
+        </p>
+        <p>
+            <small>Date: {{ item.date }}</small>
             <br />
             <small>Tagged:
-            {% for tag in project.tags %}
+            {% for tag in item.tags %}
             <i>{{ tag }}</i>
             {% endfor %}
             </small>
         </p>
-        <p>{{ project.short_info}}</p>
+        <p><a href="{{ item.url }}">{{ item.description}}</a></p>
     </div>
     {% endfor %}
 </div>
