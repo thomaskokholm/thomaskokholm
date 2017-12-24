@@ -91,7 +91,6 @@ exclude:
 # Include these files
 include:
   - _pages
-  - _cases
   - _projects
 
 # Collections
