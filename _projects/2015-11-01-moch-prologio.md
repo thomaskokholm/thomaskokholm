@@ -1,5 +1,6 @@
 ---
 layout: projects
+published: true
 title: MOCH Prologio
 ---
 
