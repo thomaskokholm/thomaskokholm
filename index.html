@@ -4,7 +4,7 @@ layout: default
 {% assign p = site.posts.first %}
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">{{ p.title }}</h1>
+    <h1 class="display-4"><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></h1>
     <p class="lead">{{ p.excerpt }}</p>
   </div>
 </div>
