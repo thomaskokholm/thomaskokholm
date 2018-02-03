@@ -1,6 +1,25 @@
 ---
 layout: post
 title: You're up and running!
+cover: /images/chris-holder-526887.jpg
+categories: 
+    - World
+    - Denmark
+    - Technology
+    - Design
+    - Culture
+    - Business
+    - Politics
+    - Opinion
+    - Science
+    - Health
+    - Style
+    - Travel
+tags:
+    - UI
+    - UX
+    - NodeJS
+    - React
 ---
 
 Next you cant update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
