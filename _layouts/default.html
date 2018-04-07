@@ -1,109 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
+    {% include header.html %}
   </head>
 
   <body>
 
-
-
+      {% include nav.html %}
       
-      <div class="container">
-          <header class="blog-header py-3">
-            <div class="row flex-nowrap justify-content-between align-items-center">
-              <div class="col-4 pt-1">
-                <a class="text-muted" href="{{ site.baseurl }}/">Home</a>
-              </div>
-              <div class="col-4 text-center">
-                <a class="blog-header-logo text-dark" href="{{ site.baseurl }}/">{{ site.name }}</a>
-              </div>
-              <div class="col-4 d-flex justify-content-end align-items-center">
-                <a class="btn btn-sm btn-outline-secondary" href="{{ site.baseurl }}/about">About</a>
-                <span>&nbsp;</span>
-                <a class="btn btn-sm btn-outline-secondary" href="{{ site.baseurl }}/projects">Projects</a>
-              </div>
-            </div>
-          </header>
-    
-          <div class="nav-scroller py-1 mb-2">
-              <nav class="nav d-flex justify-content-between">
-                  {% for category in site.categories %}
-                  {% assign c = category | first %}
-                  {% assign posts = category | last %}
-                  <div class="p-2"><a class="text-muted" href="{{ site.baseurl }}/{{c | downcase }}">{{c | replace:" ","-" }}</a></div>
-                {% endfor %}
-                <!--
-                <a class="p-2 text-muted" href="#">World</a>
-                <a class="p-2 text-muted" href="#">U.S.</a>
-                <a class="p-2 text-muted" href="#">Technology</a>
-                <a class="p-2 text-muted" href="#">Design</a>
-                <a class="p-2 text-muted" href="#">Culture</a>
-                <a class="p-2 text-muted" href="#">Business</a>
-                <a class="p-2 text-muted" href="#">Politics</a>
-                <a class="p-2 text-muted" href="#">Opinion</a>
-                <a class="p-2 text-muted" href="#">Science</a>
-                <a class="p-2 text-muted" href="#">Health</a>
-                <a class="p-2 text-muted" href="#">Style</a>
-                <a class="p-2 text-muted" href="#">Travel</a>
-                -->
-              </nav>
-            </div>
-    
-            <div id="main" role="main">
-                {{ content }}
-              </div>
-    
-    
-        <footer class="blog-footer">
-          <p>
-              <a href="{{ site.baseurl }}/">Home</a>
-              <span>&middot;</span>
-              <a href="{{ site.baseurl }}/about">About</a>
-              <span>&middot;</span>
-              <a href="{{ site.baseurl }}/projects">Projects</a>
-              <span>&middot;</span>
-              <a href="{{ site.baseurl }}/feed.xml">Feed</a>
-          </p>
-          <p>
-              Copyright &copy; Thomas Kokholm.
-            </p>
-            {% include svg-icons.html %}
-          <p>
-            <a href="#">Back to top</a>
-          </p>
-        </footer>
+        <main>
+            {{ content }}
+        </main>
 
+        {% include bigfoot.html %}
 
-    {% include analytics.html %}
-    <!--
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-    $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-</script>
+        {% include footer.html %}
+      
+
   </body>
 </html>
