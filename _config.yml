@@ -93,8 +93,11 @@ exclude:
 include:
   - _pages
   - _projects
+  - _articles
 
 # Collections
 collections:
-  projects:
+  articles:
     output: true
+  projects:
+      output: true

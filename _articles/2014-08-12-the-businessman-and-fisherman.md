@@ -1,10 +1,11 @@
 ---
 layout: post
 current: post
-cover: images/water.jpg
+cover: /images/water.jpg
 navigation: True
 title: The Businessman & The Fisherman
 date: 2014-08-12 10:18:00
+categories: tester
 tags: fables
 class: post-template
 subclass: 'post tag-fables'

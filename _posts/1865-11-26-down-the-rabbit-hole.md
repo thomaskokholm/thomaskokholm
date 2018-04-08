@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: 'images/piano.jpg'
+cover: /images/piano.jpg
 navigation: true
 title: Down The Rabbit Hole
 date: 1865-11-26 10:18:00
