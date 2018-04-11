@@ -5,12 +5,6 @@ permalink: /about/
 published: true
 ---
 
-Some information about you!
+Hello,
 
-### More Information
-
-A placest to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I'm Thomas. Fullstack developer and IT consultant, living in Copenhagen, Denmark.
