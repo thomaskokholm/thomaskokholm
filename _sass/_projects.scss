@@ -1,0 +1,19 @@
+.projects {
+  .projects-list {
+    .project-item {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+
+      .thumbnail {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+
+      //border-bottom: 1px solid #666;
+      &:hover {
+        //background: #888;
+      }
+    }
+  }
+}
