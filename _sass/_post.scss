@@ -1,0 +1,36 @@
+.page {
+  &.post {
+    header {
+      max-width: 768px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    figure {
+      &.cover-image {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+    section {
+      p {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.25rem;
+        line-height: 2rem;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    footer {
+      max-width: 768px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

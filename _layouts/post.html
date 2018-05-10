@@ -1,30 +1,31 @@
 ---
 layout: default
 ---
-<div class="container pt-4">
-  <article class="post">
+<div class="page post">
+  <div class="container">
 
-    {% if page.cover %}
-    <figure class="post-full-image" style="
-    background-image: url({{ site.baseurl }}{{ page.cover }});
-    height: 500px;
-    width: 100%;
-    background-position: center center;
-    background-size: cover;">
-    </figure>
-    {% endif %}
+    <article>
+      <header>
+        <h1 class="text-lg-center">{{page.title}}</h1>
+      </header>
 
-    
-    <h1>{{ page.title }}</h1>
+      {% if page.cover %}
+      <figure class="cover-image">
+        <img src="{{site.baseurl}}{{page.cover}}" alt="Post cover image" />
+      </figure>
+      {% endif %}
 
-    <div class="entry">
-      {{ content }}
-    </div>
+      <section>
+        <p>{{content}}</p>
+      </section>
 
-    <div class="date">
-      Written on {{ page.date | date: "%B %e, %Y" }}
-    </div>
 
-    {% include disqus.html %}
-  </article>
+
+
+      <footer>
+        <p><small>Published: <time pubdate="pubdate">{{ page.date | date: "%B %e, %Y" }}</time></small></p>
+        {% include disqus.html %}
+      </footer>
+    </article>
+  </div>
 </div>

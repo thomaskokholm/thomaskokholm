@@ -2,10 +2,16 @@
 layout: default
 ---
 <div class="page projects">
-  <article class="container">
-    <h1>{{ page.title }}</h1>
-    <div class="entry">
-      {{ content }}
+  <div class="container">
+    <article>
+
+      <header>
+        <h1>{{page.title}}</h1>
+      </header>
+
+      <section>
+        <p>{{content}}</p>
+      </section>
 
       <div class="projects-list">
         {% for project in site.projects %}
@@ -34,6 +40,6 @@ layout: default
         {% endfor %}
       </div>
 
-    </div>
-  </article>
+    </article>
+  </div>
 </div>
