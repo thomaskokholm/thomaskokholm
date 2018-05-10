@@ -2,7 +2,12 @@
   &.articles {
     .articles-list {
       .article-item {
-
+        h2 {
+          a, a:focus, a:hover {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
       }
     }
   }
