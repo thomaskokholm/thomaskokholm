@@ -7,6 +7,7 @@
     }
     figure {
       &.cover-image {
+        text-align: center;
         img {
           max-width: 100%;
           height: auto;
@@ -26,6 +27,7 @@
         height: auto;
       }
       figure {
+        text-align: center;
         figcaption {
           text-align: center;
         }
